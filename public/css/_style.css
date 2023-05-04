@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inspiration&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/img/bg-cat2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}   
+body form.info
+{
+    margin: 5% 10%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    border: solid white 1px;
+    opacity: 0.9;
+    padding: 0 30px;
+}
+body form.info h1
+{
+    padding: 20px;
+    font-family: 'Inspiration';
+    color: white;
+    margin: 4px;
+    font-weight: 600;
+    font-size: 50px;
+}
+body form.info .msg
+{
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: azure;
+    border-radius: 8px;
+    overflow: hidden;
+}
+body form.info .msg .msgtext
+{
+    width: 100%;
+    background-color: whitesmoke;
+}
+body form.info .msg h2
+{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+body form.info .msg p
+{
+    text-align: justify;
+    padding: 10px;
+}
+body form.info .msg button
+{
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: whitesmoke;
+    color: red;
+    border-radius: 6px;
+}
+body form.info .msg button:active
+{
+    transform: scale(1.08);
+}
+body form.info .msg button:hover
+{
+    box-shadow: 0 3px 15px red;
+    border: solid red 1px;
+    font-weight: 600;
+}

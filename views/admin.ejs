@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Panel</title>
+    <link rel="stylesheet" href="/css/_style.css">
+</head>
+<body>
+        <form class="info" action="/deleteMessage" method="post">
+            <h1>Messages</h1>
+            <% messageEJS.forEach(function(person){ %> 
+                <div class="msg">
+                    <h2>Name: <%= person.name %>  </h2>
+                    <h2>Email: <%= person.email %>  </h2>
+                    <h2>ContactNo: <%= person.contact_no %>  </h2>
+                    <h2>Message</h2>
+                    <div class="msgtext">
+                        <p> <%= person.msg %> </p>
+                    </div>
+                    <button type="submit" name="deleteButton" value="<%= person._id %> ">Delete</button>
+                </div>
+            <% }); %>
+        </form>
+</body>
+</html>
